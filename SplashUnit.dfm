@@ -1,0 +1,81 @@
+object SplashForm: TSplashForm
+  Left = 381
+  Top = 172
+  BorderStyle = bsNone
+  Caption = 'snappy'
+  ClientHeight = 300
+  ClientWidth = 480
+  Color = clBlack
+  Font.Charset = RUSSIAN_CHARSET
+  Font.Color = 14541995
+  Font.Height = -13
+  Font.Name = 'Corbel'
+  Font.Style = []
+  OldCreateOrder = False
+  ScreenSnap = True
+  SnapBuffer = 15
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnMouseDown = FormMouseDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 15
+  object MailLabel: TLabel
+    Left = 26
+    Top = 231
+    Width = 120
+    Height = 15
+    Cursor = crHandPoint
+    Caption = 'inullsleep@gmail.com'
+    OnClick = MailLabelClick
+    OnMouseEnter = LabelMouseEnter
+    OnMouseLeave = LabelMouseLeave
+  end
+  object JumpLabel: TLabel
+    Left = 26
+    Top = 273
+    Width = 84
+    Height = 15
+    Cursor = crHandPoint
+    Caption = 'j.mp/getsnappy'
+    OnClick = JumpLabelClick
+    OnMouseEnter = LabelMouseEnter
+    OnMouseLeave = LabelMouseLeave
+  end
+  object VersionLabel: TLabel
+    Left = 432
+    Top = 275
+    Width = 37
+    Height = 16
+    Alignment = taRightJustify
+    Caption = 'version'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = 15790320
+    Font.Height = -11
+    Font.Name = 'Trebuchet MS'
+    Font.Style = []
+    ParentFont = False
+    OnClick = VersionLabelClick
+  end
+  object CloseButton: TLabel
+    Left = 448
+    Top = 8
+    Width = 22
+    Height = 21
+    Cursor = crHandPoint
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'x'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = 4079166
+    Font.Height = -15
+    Font.Name = 'Comic Sans MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = CloseButtonClick
+    OnMouseEnter = CloseButtonMouseEnter
+    OnMouseLeave = CloseButtonMouseLeave
+  end
+end
